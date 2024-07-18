@@ -1,0 +1,18 @@
+stages:
+  download_data:
+    cmd: python3 src/download_data.py --params params.yaml
+    deps:
+    - src/download_data.py
+    outs:
+    - data/external/lego/index.csv
+    params:
+    - download_data
+  resize_images:
+    cmd: python3 src/resize_images.py --params params.yaml
+    deps:
+    - src/resize_images.py
+    - data/external/lego/
+    outs:
+    - data/processed/lego/
+    params:
+    - resize_images
