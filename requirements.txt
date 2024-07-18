@@ -1,2 +1,3 @@
 dvc[all]==2.55.0
 kaggle==16.14
+pillow==10.4.0

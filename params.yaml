@@ -1,2 +1,4 @@
 download_data:
   dataset_version: 1
+resize_images:
+  resolution: 1024
